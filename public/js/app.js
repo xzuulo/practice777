@@ -8,13 +8,13 @@ function getSavedNews() {
   return JSON.parse(localStorage.getItem("savedNews")) || [];
 }
 
-function saveNews(article) {
+function saveNews(article,obj) {
   const saved = getSavedNews();
 
   saved.push(article);
 
   localStorage.setItem("savedNews", JSON.stringify(saved));
-
+  obj.remove();
   renderSavedNews();
 }
 
@@ -46,7 +46,7 @@ searchBtn.addEventListener("click", async () => {
       <div class="article">
         <h3>${article.title}</h3>
         <p>${article.description || ""}</p>
-        <button onclick='saveNews(${JSON.stringify(article)})'>Save</button>
+        <button onclick='saveNews(${JSON.stringify(article)},this)'>Сохранить</button>
       </div>
     `,
     )
