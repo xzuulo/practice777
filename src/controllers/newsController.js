@@ -14,7 +14,6 @@ async function searchNews(req, res) {
     
     res.json(articles);
   } catch (error) {
-    console.error("Детали ошибки от API:", error.response ? error.response.data : error.message);
     res.status(500).json({ error: "Failed to fetch news" });
   }
 }
