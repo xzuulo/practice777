@@ -1,5 +1,7 @@
 ### При нажатии на ссылку не перебрасывает на сайт, так как у меня нет домена и SSL протокола, просто скопируйте ссылку и вставьте в адресную строку самостоятельно.
 
+<a href="https://trendshift.io/repositories/21997" target="_blank"><img src="https://trendshift.io/api/badge/repositories/21997" alt="mvanhorn%2Flast30days-skill | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
 ## Суть проекта "Черный дельфин":
 ### Новостной сайт с поиском, где можно сохранять новости и читать их без подключения к интернету.
 ### Новости берутся с News API
