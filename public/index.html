@@ -1,18 +1,22 @@
 <!doctype html>
-<html>
+<html lang="ru">
     <head>
-        <title>News App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News App - Черный дельфин</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body style="background-color: gainsboro;">
+    <body>
         <div class="container">
-            <h1><img src="https://img.icons8.ru/?size=100&id=103227&format=png&color=000000" alt="лого" style="width: 3%;"> Черный дельфин</h1>
+            <h1>
+                <img src="https://img.icons8.ru/?size=100&id=103227&format=png&color=000000" alt="лого"> 
+                Черный дельфин
+            </h1>
 
-            <div style="display: flex; justify-content: center;">
-                <input id="searchInput" placeholder="Введите запрос..." style="border-radius: 8px;height: 8vh;width: 50vw;  font-size: 20px; text-align: center;"/>
-                <button id="searchBtn" style="border-radius: 8px;height: 9vh;  font-size: 30px;">🔍</button>
+            <div class="search-wrapper">
+                <input id="searchInput" placeholder="Введите запрос..." />
+                <button id="searchBtn">🔍</button>
             </div>
-
 
             <h2>Результаты поиска:</h2>
             <div id="newsContainer"></div>
